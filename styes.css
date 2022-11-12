@@ -1,0 +1,292 @@
+/* font-family: 'Bai Jamjuree', sans-serif; -400,600*/
+
+body {
+  background-image: url("./images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  color: hsl(210, 10%, 33%);
+  font-size: 35px;
+}
+
+h2 {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  color: hsl(210, 10%, 33%);
+}
+
+p {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  color: hsl(201, 11%, 66%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.hero > p {
+  inline-size: 550px;
+  overflow-wrap: break-word;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  padding: 3.125rem;
+}
+
+button {
+  border: none;
+  padding: 1rem 4rem;
+  border-radius: 3.125rem;
+  color: white;
+  cursor: pointer;
+}
+
+.ios-btn {
+  background-color: hsl(171, 66%, 44%);
+  margin-right: 10px;
+}
+.ios-btn:active {
+  box-shadow: 0 3px 10px hsl(171, 66%, 44%);
+  transition: filter 0.5s ease;
+}
+
+.ios-btn:hover {
+  filter: opacity(70%);
+  transition: filter 0.5s ease;
+}
+
+.mac-btn {
+  background-color: hsl(233, 100%, 69%);
+  margin-left: 10px;
+}
+
+.mac-btn:active {
+  box-shadow: 0 3px 10px hsl(233, 100%, 69%);
+  transition: filter 0.5s ease;
+}
+
+.mac-btn:hover {
+  filter: opacity(70%);
+  transition: filter 0.5s ease;
+}
+
+.why-us {
+  margin: auto;
+  justify-content: center;
+}
+
+.why-us > p {
+  inline-size: 620px;
+  overflow-wrap: break-word;
+}
+
+.features {
+  display: flex;
+  margin: auto;
+}
+
+.mac-computer {
+  transform: scale(0.8);
+  justify-content: space-between;
+}
+
+.features-description {
+  margin: auto;
+}
+
+.features-description > h2 {
+  text-align: left;
+}
+
+.features-description > p {
+  text-align: left;
+  inline-size: 360px;
+  overflow-wrap: break-word;
+}
+
+.access {
+  margin: auto;
+  justify-content: center;
+}
+
+.access > p {
+  inline-size: 600px;
+  overflow-wrap: break-word;
+}
+
+.mobile-support {
+  display: block;
+  margin: auto;
+  transform: scale(0.8);
+}
+
+.productivity {
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.more-features {
+  display: flex;
+  margin: auto;
+  padding-bottom: 80px;
+}
+
+.blacklist-icon {
+  display: block;
+  margin: auto;
+}
+
+.blacklist {
+  inline-size: 350px;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+.text-icon {
+  display: block;
+  margin: auto;
+}
+
+.text {
+  inline-size: 300px;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+.preview-icon {
+  display: block;
+  margin: auto;
+}
+
+.preview {
+  inline-size: 300px;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+.used-by {
+  display: inline-block;
+  justify-content: space-around;
+  margin: auto;
+  padding-bottom: 80px;
+}
+
+.google-logo {
+  margin: auto;
+  padding: 10px 30px;
+}
+
+.ibm-logo {
+  margin: auto;
+  padding: 10px 30px;
+}
+
+.microsoft-logo {
+  margin: auto;
+  padding: 10px 30px;
+}
+
+.hp-logo {
+  margin: auto;
+  padding: 10px 30px;
+}
+
+.vector-graphics-logo {
+  margin: auto;
+  padding: 10px 30px;
+}
+
+.download {
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.download > p {
+  inline-size: 600px;
+  overflow-wrap: break-word;
+}
+
+footer {
+  display: flex;
+  background-color: #f9f7f7;
+  height: 20vh;
+}
+
+.footer-logo {
+  transform: scale(0.4);
+  display: flex;
+}
+
+.footer-links {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+a {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+li a {
+  color: hsl(210, 10%, 33%);
+  text-decoration: none;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+li a:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+li.faqs-contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+li.privacy-policy-press-kit {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons {
+  margin: auto;
+  justify-content: flex-end;
+  justify-items: center;
+  padding: 2px 6px;
+}
+
+i {
+  color: hsl(210, 10%, 33%);
+  font-size: 1.563rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  padding: 0.313rem;
+}
+
+i:hover {
+  color: hsl(171, 66%, 44%);
+}
