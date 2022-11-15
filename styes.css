@@ -1,4 +1,8 @@
-/* font-family: 'Bai Jamjuree', sans-serif; -400,600*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   background-image: url("./images/bg-header-desktop.png");
@@ -25,25 +29,48 @@ p {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .hero {
-  margin: auto;
   justify-content: center;
   padding-bottom: 80px;
+  text-align: center;
+}
+@media screen and (max-width: 650px) {
+  .hero {
+    flex-wrap: wrap;
+  }
 }
 
 .hero > p {
-  inline-size: 550px;
+  padding-top: 10px;
+  inline-size: 34.375em;
   overflow-wrap: break-word;
+  margin: auto;
+}
+@media screen and (max-width: 650px) {
+  .hero > p {
+    padding-top: 10px;
+    inline-size: auto;
+    overflow-wrap: break-word;
+    margin: auto;
+    margin-bottom: 80px;
+  }
 }
 
 .logo {
   display: block;
   margin: auto;
   padding: 3.125rem;
+}
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    position: relative;
+  }
 }
 
 button {
@@ -53,10 +80,26 @@ button {
   color: white;
   cursor: pointer;
 }
-
+@media screen and (max-width: 650px) {
+  button {
+    margin: 0px 10px 10px 0px;
+    border: none;
+    padding: 1rem 4rem;
+    border-radius: 3.125rem;
+    color: white;
+    cursor: pointer;
+  }
+  .ios-btn {
+    background-color: hsl(171, 66%, 44%);
+  }
+  .mac-btn {
+    background-color: hsl(233, 100%, 69%);
+  }
+}
 .ios-btn {
   background-color: hsl(171, 66%, 44%);
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 .ios-btn:active {
   box-shadow: 0 3px 10px hsl(171, 66%, 44%);
@@ -71,6 +114,7 @@ button {
 .mac-btn {
   background-color: hsl(233, 100%, 69%);
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 .mac-btn:active {
@@ -89,18 +133,44 @@ button {
 }
 
 .why-us > p {
+  padding-top: 20px;
+  margin: auto;
   inline-size: 620px;
   overflow-wrap: break-word;
+}
+@media screen and (max-width: 650px) {
+  .why-us > p {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    inline-size: auto;
+    overflow-wrap: break-word;
+    margin: auto;
+  }
 }
 
 .features {
   display: flex;
   margin: auto;
 }
+@media screen and (max-width: 650px) {
+  .features {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
 
 .mac-computer {
   transform: scale(0.8);
   justify-content: space-between;
+}
+
+@media screen and (max-width: 650px) {
+  .mac-computer {
+    justify-content: center;
+    transform: scale(0.8);
+    padding-bottom: 40px;
+  }
 }
 
 .features-description {
@@ -113,8 +183,23 @@ button {
 
 .features-description > p {
   text-align: left;
+  padding-top: 10px;
+  padding-bottom: 20px;
   inline-size: 360px;
   overflow-wrap: break-word;
+}
+@media screen and (max-width: 650px) {
+  .features-description > h2 {
+    text-align: center;
+  }
+
+  .features-description > p {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    inline-size: auto;
+    overflow-wrap: break-word;
+  }
 }
 
 .access {
@@ -123,107 +208,235 @@ button {
 }
 
 .access > p {
+  margin: auto;
+  padding-top: 20px;
   inline-size: 600px;
   overflow-wrap: break-word;
 }
-
+@media screen and (max-width: 650px) {
+  .access > p {
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    inline-size: auto;
+    overflow-wrap: break-word;
+  }
+}
 .mobile-support {
   display: block;
   margin: auto;
   transform: scale(0.8);
+}
+@media screen and (max-width: 650px) {
+  .mobile-support {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    transform: scale(0.8);
+    padding-bottom: 80px;
+  }
 }
 
 .productivity {
   margin: auto;
   padding-bottom: 50px;
 }
+.productivity > p {
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  .productivity {
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  .productivity > p {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    inline-size: auto;
+    overflow-wrap: break-word;
+  }
+}
 
 .more-features {
   display: flex;
-  margin: auto;
+  justify-content: center;
   padding-bottom: 80px;
+}
+@media screen and (max-width: 650px) {
+  .more-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 80px;
+  }
+
+  .blacklist > p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    inline-size: auto;
+    overflow-wrap: break-word;
+    margin: auto;
+  }
+  .text > p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    inline-size: auto;
+    overflow-wrap: break-word;
+    margin: auto;
+  }
+  .preview > p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    inline-size: auto;
+    overflow-wrap: break-word;
+    margin: auto;
+  }
 }
 
 .blacklist-icon {
+  padding-bottom: 20px;
   display: block;
   margin: auto;
 }
 
 .blacklist {
-  inline-size: 350px;
+  margin: auto;
+}
+
+.blacklist > p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  inline-size: 300px;
   overflow-wrap: break-word;
-  margin: 0;
 }
 
 .text-icon {
+  padding-bottom: 20px;
   display: block;
   margin: auto;
 }
 
 .text {
+  margin: auto;
+}
+
+.text > p {
+  padding-top: 20px;
+  padding-bottom: 20px;
   inline-size: 300px;
   overflow-wrap: break-word;
-  margin: 0;
 }
 
 .preview-icon {
+  padding-bottom: 20px;
   display: block;
   margin: auto;
 }
 
 .preview {
+  margin: auto;
+}
+
+.preview > p {
+  padding-top: 20px;
+  padding-bottom: 20px;
   inline-size: 300px;
   overflow-wrap: break-word;
-  margin: 0;
 }
 
 .used-by {
   display: inline-block;
-  justify-content: space-around;
-  margin: auto;
   padding-bottom: 80px;
 }
 
 .google-logo {
   margin: auto;
-  padding: 10px 30px;
+  padding: 10px 25px;
 }
 
 .ibm-logo {
   margin: auto;
-  padding: 10px 30px;
+  padding: 10px 25px;
 }
 
 .microsoft-logo {
   margin: auto;
-  padding: 10px 30px;
+  padding: 10px 25px;
 }
 
 .hp-logo {
   margin: auto;
-  padding: 10px 30px;
+  padding: 10px 25px;
 }
 
 .vector-graphics-logo {
   margin: auto;
-  padding: 10px 30px;
+  padding: 10px 25px;
+}
+
+@media screen and (max-width: 650px) {
+  .used-by {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 80px;
+  }
+  .google-logo {
+    padding-bottom: 50px;
+  }
+  .ibm-logo {
+    padding-bottom: 50px;
+  }
+  .microsoft-logo {
+    padding-bottom: 50px;
+  }
+
+  .hp-logo {
+    padding-bottom: 50px;
+  }
+
+  .vector-graphics-logo {
+    padding-bottom: 50px;
+  }
 }
 
 .download {
   margin: auto;
   justify-content: center;
+  text-align: center;
   padding-bottom: 80px;
 }
 
 .download > p {
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
   inline-size: 600px;
   overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 650px) {
+  .download {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+  .download > p {
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    inline-size: auto;
+    overflow-wrap: break-word;
+  }
 }
 
 footer {
   display: flex;
   background-color: #f9f7f7;
-  height: 20vh;
+  width: 100%;
 }
 
 .footer-logo {
@@ -289,4 +502,77 @@ i {
 
 i:hover {
   color: hsl(171, 66%, 44%);
+}
+
+@media screen and (max-width: 650px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 650px) {
+  .footer-logo {
+    display: block;
+    margin: auto;
+    transform: scale(0.3);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  ul {
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+  }
+
+  li {
+    list-style: none;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  li a {
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+    font-family: "Bai Jamjuree", sans-serif;
+  }
+
+  li a:hover {
+    color: hsl(171, 66%, 44%);
+  }
+  li.faqs-contact-us {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li.privacy-policy-press-kit {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .social-icons {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+  i {
+    color: hsl(210, 10%, 33%);
+    font-size: 1.563rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    padding: 0.938rem;
+    justify-content: space-evenly;
+  }
+
+  i:hover {
+    color: hsl(171, 66%, 44%);
+  }
 }
